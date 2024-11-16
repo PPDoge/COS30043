@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+  <div id="app">
+    <app-request-data></app-request-data>
+  </div>
+
+  <script>
+    const app = Vue.createApp({});
+
+    app.component("app-request-data", {
+      data() {
+        return { posts: [] }; // Use a more descriptive name
+      },
+      template: `
+        <ul>
+          <li v-for="post in posts" :key="post.id">
+            {{ post.id }} - {{ post.title }}
+          </li>
+        </ul>
+      `,
+      mounted() {
+        $.getJSON("https://jsonplaceholder.typicode.com/posts")
+          .done(data => { 
+            this.posts = data;  // Update posts directly
+          })
+          .fail(() => {
+            alert("Fetching data failed. Please try again."); // More user-friendly
+          });
+      },
+    });
+
+    app.mount("#app");
+  </script>
+</body>
+</html>

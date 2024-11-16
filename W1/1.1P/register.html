@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Dreamy Cafe </title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Assignment1" />
+        <meta name="keywords" content="Anh Tu's Assignment" />
+        <meta name="author" content="Nguyen Duy Anh Tu" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <script defer src="js/register.js"></script>
+    </head>
+    <body class="test">
+        <div id="Home">
+            <div id="menu">
+                <div class="item">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="item">
+                    <a href="order.html">Order</a>
+                </div>
+                <div class="item">
+                    <a href="features.html">Features</a>
+                </div>
+                <div class="Item">
+                    <a href="register.html">Log in/Register</a>
+                </div>
+            </div>
+            <main>
+              <form id="regform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+                <div class="Form">
+                    <div>
+                        <h3 class="header2"> Register </h3>
+                    </div>
+                    <div class="input__wrapper">
+                        <label class="input__label" for="username">First Name:</label><br>
+                        <input class="input__form" type="text" placeholder="Enter your first name" id="fname" name="fname" value="">
+                        <small class="input__feedback">Please fill in this field.</small>
+                    </div>
+    
+                    <div class="input__wrapper">
+                        <label class="input__label" for="username">Last Name:</label><br>
+                        <input class="input__form" type="text" placeholder="Enter your last name" id="lname" name="lname" value="">
+                        <small class="input__feedback">Please fill in this field.</small>
+                    </div>
+    
+                    <div class="input__wrapper">
+                        <label class="input__label" for="password">Phone Number:</label><br>
+                        <input class="input__form" type="password" placeholder="Enter your phone number" id="phone" name="phone" value="">
+                        <small class="input__feedback">Please fill in this field.</small>
+                    </div>
+                    <div class="input__wrapper">
+                        <label class="input__label" for="username">Username:</label><br>
+                        <input class="input__form" type="text" placeholder="Enter your username" id="username" name="username" value="">
+                        <small class="input__feedback">Please fill in this field</small>
+                    </div>
+    
+                    <div class="input__wrapper">
+                        <label class="input__label" for="username">Email:</label><br>
+                        <input class="input__form" type="text" placeholder="Enter your email" id="email" name="email" value="">
+                        <small class="input__feedback">Please fill in this field with the correct email format</small>
+                    </div>
+    
+                    <div class="input__wrapper">
+                        <label class="input__label" for="password">Password:</label><br>
+                        <input class="input__form" type="password" placeholder="Enter your password" id="password" name="password" value="">
+                        <small class="input__feedback">Please fill in a password with at least 8 characters.</small>
+                    </div>
+    
+                    <div class="input__wrapper">
+                        <label class="input__label" for="repassword">Re-enter password:</label><br>
+                        <input class="input__form" type="password" placeholder="Confirm your password" id="repassword" name="password" value="">
+                        <small class="input__feedback">Please fill in the same as the above password</small>
+                    </div>
+                    
+                    <div class="input__wrapper">
+                        <label class="input__label" for="username">Postcode:</label><br>
+                        <input class="input__form" type="text" placeholder="Enter postcode" id="postcode" name="postcode" value="">
+                        <small class="input__feedback">Please fill in postcode that is 4 digits</small>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Submit"/>
+                        <input type="reset" value="Reset"/>
+                    </div>
+                </div>
+            </form>
+              </main>
+        </div>
+    </body>
+    <footer>
+      <div id="footer">            
+          <div class="Footer">
+              <p>
+                  Dreamy Cafe
+                  <a href="https://www.facebook.com/" target="_blank" class="footer_icon">
+                      <i class="footer-icon fa-brands fa-facebook"></i>
+                  </a>
+                  <a href="https://mail.google.com/mail/?tab=mm&authuser=3" target="_blank" class="footer_icon">
+                      <i class="footer-icon fa-solid fa-envelope"></i>
+                  </a>
+              </p>
+          </div>
+  </footer>
+</html>

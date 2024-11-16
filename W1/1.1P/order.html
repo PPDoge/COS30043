@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Dreamy Cafe </title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Assignment1" />
+        <meta name="keywords" content="Anh Tu's Assignment" />
+        <meta name="author" content="Nguyen Duy Anh Tu" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <script defer src="js/order.js"></script>
+    </head>
+    <body class="test">
+        <div id="Home">
+            <div id="menu">
+                <div class="item">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="item">
+                    <a href="order.html">Order</a>
+                </div>
+                <div class="item">
+                    <a href="features.html">Features</a>
+                </div>
+                <div class="Item">
+                    <a href="register.html">Log in/Register</a>
+                </div>
+            </div>
+            <main>
+              <div class="info">
+                <form id="info-option" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+                    <div class="form">
+                        <div>
+                            <h3>Please fill in your information </h3>
+                        </div>
+                        <div class="radiopick">
+                            <h3>Choose a delivery method </h3>
+                            <input type="radio" id="pick-up-option" class="select-option" name="select_option" value="Pick up">
+                            <label for="pickup">Pick Up</label><br>
+                            <input type="radio" id="delivery-option" class="select-option" name="select_option" value="Delivery" checked>
+                            <label for="delivery">Delivery</label><br>
+                        </div>
+                        <div class="pickups hideAddress">
+                            <label for="address">Address:</label><br>
+                            <input type="text" id="deli-address-input" name="address" value="" placeholder="Enter your address"><br>
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="same-address hideAddress">
+                            <label for="same delivery address">same Billing Address as the Delivery Address</label>
+                            <input type="checkbox" id="same-delivery-address" name="same delivery address">
+                        </div>
+                        <div class="pickups hideAddress">
+                            <label for="billing address" class="form-label">Billing Address</label><br>
+                            <input id="bill-address-input" name="bill-address-input" type="text"><br>
+                            <span class="form-message"></span><br>
+                        </div>
+                        <div class="option">
+                            <h4>Paying Mode:</h4>
+                            <input type="radio" class="select-pay-mode" name="pay mode" value="Pay by cash">
+                            <label for="pay mode">Pick Up</label>
+                            <input type="radio" class="select-pay-mode" id="visa-card" name="pay mode" value="Visa Card" placeholder="Visa Card" checked>
+                            <label for="pay mode">Visa Card</label>
+                            <input type="radio" class="select-pay-mode" id="master-card" name="pay mode" value="Master Card">
+                            <label for="pay mode">Master Card</label>
+                            <input type="radio" class="select-pay-mode" id="american-express" name="pay mode" value="American Express">
+                            <label for="pay mode">American Express</label>
+                        </div>
+                        <div class="pickups" id="hide-credit-card">
+                            <label for="credit card" class="form-label">Credit Card</label><br>
+                            <input id="credit-card" name="credit card" type="text"><br>
+                            <span class="form-message"></span><br>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="Submit"/>
+                            <input type="reset" value="Reset" id="reset">
+                        </div> 
+                    </div><br>
+                    </div>
+                </form>
+            </div>
+              </main>
+    </body>
+    <footer>
+      <div id="footer">            
+          <div class="Footer">
+              <p>
+                  Dreamy Cafe
+                  <a href="https://www.facebook.com/" target="_blank" class="footer_icon">
+                      <i class="footer-icon fa-brands fa-facebook"></i>
+                  </a>
+                  <a href="https://mail.google.com/mail/?tab=mm&authuser=3" target="_blank" class="footer_icon">
+                      <i class="footer-icon fa-solid fa-envelope"></i>
+                  </a>
+              </p>
+          </div>
+  </footer>
+</html>
